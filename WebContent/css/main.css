@@ -1,0 +1,522 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+body > section {
+    clear: both;
+    padding: 50px 0;
+}
+
+h2, h3{
+    color:#15365b;
+    margin-bottom: 40px;
+}
+
+.item-feature h4{
+    color:#15365b;
+    text-transform: uppercase;
+}
+
+h2:after, h3:after{
+    content: "";
+    height: 5px;
+    width: 40px;
+    background-color: #15365b;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+
+}
+
+.navbar-default{
+    box-shadow: none;
+    background-color: transparent;
+    border: none;
+    min-height: 90px;
+    padding-top: 10px;
+    transition: .75s all ease;
+}
+.effect{
+    background-color: #123156;
+    min-height: 30px;
+    box-shadow: 0px 0px 10px black;
+    padding-top: 0;
+   
+}
+
+.nav > li > a{/* navbar headings*/
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 1.3em;
+    text-shadow: 1px 1px, 1px, black;
+    -webkit-text-shadow: 1px 1px, 1px, black;
+    -moz-text-shadow: 1px 1px, 1px, black;
+}
+
+.nav > li.active{
+    background-color: #08192d;
+    transition: 1s all ease;
+
+}
+.nav > li > a:hover, 
+.nav > li > a:focus {/*navbar*/
+    background-color: transparent;
+}
+
+section#slider{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e3d5a+1,0c223b+100 */
+background: #1e3d5a; /* Old browsers */
+background: -moz-linear-gradient(top,  #1e3d5a 1%, #0c223b 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #1e3d5a 1%,#0c223b 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #1e3d5a 1%,#0c223b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3d5a', endColorstr='#0c223b',GradientType=0 ); /* IE6-9 */
+min-height: 600px;
+padding: 70px 0;
+}
+
+section#slider{
+    margin :0 auto;
+}
+
+.img-responsive#slide{/* slider images*/
+    height: 570px;
+    width: 320px;
+}
+
+.blue-circle{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100%;
+    background-color: #15365b;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    margin: 0 auto;
+}
+
+.c{
+    color: brown;
+}
+
+.blue-circle div{
+    float: left;
+    width: 100%;
+    padding-top: 45%;
+    line-height: 1em;
+    margin-top: -0.5em;
+    text-align: center;
+    color: #ffffff;
+}
+
+.blue-circle div i{
+    font-size: 3em;
+
+}
+
+#about .blue-circle{
+    width: 50%;
+    padding-bottom: 50%;
+}
+
+
+
+section#features{
+    background-color: #f5f5f5;
+
+}
+
+.item-feature{
+    margin-bottom: 30px; 
+}
+
+#screens .img-responsive{
+    height: 570px;
+    width: 320px;
+}
+
+section#parallax{
+    height: 700px;
+    background-image: url(../img/ipadApp.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+}
+
+h2.parallax{
+    font-size: 3.6em;
+    color: #ffffff;
+    font-weight: 700;
+    text-shadow: 0px 7px 8px black;
+    -moz-text-shadow: 0px 7px 8px black;
+    -webkit-text-shadow: 0px 7px 8px black;
+}
+h2.parallax:after{
+    display: none;
+}
+
+section#download{
+    padding-bottom: 30px;
+
+}
+section#download .content-downloads{
+    /*height: 700px;*/
+    background-color: #f5f5f5;
+    position: relative;
+}
+/*section#download div.phone{
+    position: relative;
+    width: 50%;
+    float: left;
+    height: 100%;
+    book-shadow: inset -7px -7px 12px -2px rgba(0, 0, 0, .15);
+    -moz-book-shadow: inset -7px -7px 12px -2px rgba(0, 0, 0, .15);
+    -webkit-book-shadow: inset -7px -7px 12px -2px rgba(0, 0, 0, .15);
+}*/
+/*section#download div.phone img{
+    position: absolute;
+    bottom: 0;
+}*/
+
+/*section#download .downloads-empty{
+    width: 100%;
+    background-color: #f5f5f5;
+    float: right;
+    height: 80%;
+    z-index: 2;
+    background-image: url(..//img/downloadAppBG.jpg);
+   background-repeat: no-repeat;
+    background-position: bottom right;
+}*/
+
+/*section#download .download{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 70px; 
+}
+*/
+section#download .platforms > div{
+    /*border-radius: 20px;*/
+    /*border: 3px solid #15365b;*/
+    /*padding: 12px 0;*/
+    font-size: 1.2em;
+    position: relative;
+    padding-left: 50px;
+    color: #0c243d;
+
+}
+
+section#download .platforms i{
+    font-size: 2.5em;
+    /*position: absolute;*/
+    margin-right: 12px;
+    /*top : 15px; */
+}
+
+section#support{
+    padding-bottom: 0;
+    background-color: #1a3d61;
+}
+section#support h2{
+    color: #ffffff;
+}
+section#support h2:after{
+    background-color: #ffffff;
+}
+section#support p{
+    font-size: 1.6em;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+section#support input,
+section#support textarea{
+    min-height: 50px;
+    margin-bottom: 20px;
+    background-color: #1a3d61;
+    border: 3px solid #ffffff;
+    border-radius: 25px;
+    color: #ffffff;
+}
+section#support textarea{
+    min-height: 200px;
+}
+section#support input.btn{
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 5px 50px;
+    font-size: 1.4em;
+    color: #1a3d61;
+}
+::webkit-input-placeholder{
+color: #ffffff!important;
+}
+:moz-placeholder{
+color: #ffffff!important;
+}
+
+::moz-placeholder{
+color: #ffffff!important;
+}
+:ms-input-placeholder{
+color: #ffffff!important;
+}
+footer p{
+    background-color: #102745;
+    padding: 10px 0;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.footer{
+    font-size: 1.2em;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 8px 0;
+    color: #102745;
+    margin-top: 140px;
+}
+.background{
+    color: #f5f5f5;
+}
+
+/* login form css*/
+.form-signin
+{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading, .form-signin
+{
+    margin-bottom: 10px;
+}
+
+.form-signin .form-control
+{
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus
+{
+    z-index: 2;
+}
+.form-signin input[type="text"]
+{
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 10px;
+}
+.form-signin input[type="password"]
+{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-bottom: 40px;
+}
+.account-wall
+{
+    margin-top: 20px;
+    padding: 40px 0px 20px 0px;
+    background-color: #f7f7f7;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.login-title
+{
+    color: #102745;
+    font-size: 24px;
+    font-weight: 400;
+    display: block;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
